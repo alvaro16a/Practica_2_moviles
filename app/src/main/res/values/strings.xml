@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Practica_2_moviles</string>
+    <string name="todo">TODO</string>
+    <string name="textview">TextView</string>
+    <string name="cerrarsesion">Cerrar sesion</string>
+    <string name="correo">Correo: </string>
+    <string name="clave">clave: </string>
+    <string name="I_sesion">INICIAR SESIÓN</string>
+    <string name="registrarse">"Crear cuenta "</string>
+</resources>

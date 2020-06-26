@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Barter_color"
+    android:orientation="vertical"
+    tools:context=".LoginActivity">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="8dp"
+        android:background="@android:color/white">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="312dp"
+            android:layout_height="129dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="24dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/logo_barter"
+            tools:ignore="ContentDescription" />
+
+        <LinearLayout
+            android:layout_width="320dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="54dp"
+            android:layout_marginTop="200dp"
+            android:background="@color/Barter_color"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView2">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="8dp"
+                android:layout_weight="1"
+                android:text="@string/correo"
+                android:textColor="@android:color/white"
+                android:textSize="24sp" />
+
+            <EditText
+                android:id="@+id/et_correo"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                android:background="@android:color/white"
+                android:ems="10"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/Barter_color"
+                tools:ignore="Autofill" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="320dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="54dp"
+            android:layout_marginTop="270dp"
+            android:background="@color/Barter_color"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView2">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="8dp"
+                android:layout_weight="1"
+                android:text="@string/clave"
+                android:textColor="@android:color/white"
+                android:textSize="24sp" />
+
+            <EditText
+                android:id="@+id/et_clave"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                android:background="@android:color/white"
+                android:ems="10"
+                android:inputType="textPassword"
+                android:textColor="@color/Barter_color"
+                android:autofillHints="" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/bt_inicio_sesion"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="50dp"
+            android:background="@color/Barter_color"
+            android:text="@string/I_sesion"
+            android:textColor="@android:color/white"
+            android:textSize="30sp"
+            android:textStyle="bold|italic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+        <Button
+            android:id="@+id/bt_nuevo_usuario"
+            android:layout_width="149dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginBottom="4dp"
+            android:background="@android:color/white"
+            android:text="@string/registrarse"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="18sp"
+            android:textStyle="italic"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
